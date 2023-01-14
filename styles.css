@@ -1,0 +1,290 @@
+:root {
+    --branco: #FFFFFF;
+    --fonte: 'Inter';
+    --cinza-fonte: #667085;
+    --vinho-botao: #8E2424;
+    --preto: #000000;
+    --azul-escuro: #101828;
+    --rosa-fundo-botao: rgba(142, 36, 36, 0.05);
+    --cinza-rodape: #F9FAFB;
+    --cinza-copyright: #98A2B3;
+    --cor-borda: #EAECF0;
+}
+
+body {    
+    background-color: var(--branco);
+    color: var(--cinza-fonte);
+    font-family: var(--fonte);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5em 0;
+}
+
+.cabecalho__links {
+    margin-right: 35em;
+}
+
+.cabecalho__link, .cabecalho__botao {    
+    font-weight: 500;
+    text-decoration: none;    
+    transition: 200ms;
+}
+
+.cabecalho__link {
+    padding-right: 2em; 
+    color: var(--cinza-fonte);   
+}
+
+.cabecalho__link:hover {
+    color: var(--azul-escuro);
+}
+
+.cabecalho__botoes {
+    padding: 1em 1em;       
+}
+
+.cabecalho__botao:hover {
+    background-color: var(--azul-escuro);
+    border-color: var(--azul-escuro);
+}
+
+.cabecalho__botao {
+    color: var(--branco);
+    border: 2px solid var(--vinho-botao);
+    background-color: var(--vinho-botao);
+    padding: 0.7em 1em;
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+}
+
+.inicio {
+    margin: 10em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio__span {
+    color: var(--vinho-botao);
+    font-weight: 600;
+}
+
+.inicio__titulo {
+    color: var(--preto);
+    font-size: 48px;
+    font-weight: 600;
+    margin: 1em 0;
+}
+
+.inicio__texto {
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 50%;
+    text-align: center;
+    line-height: 1.5em;    
+}
+
+.segundo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 10em 15em 10em;
+    column-gap: 2em;
+}
+
+.secao__titulo {
+    color: var(--vinho-botao);
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.secao__paragrafo {
+    color: var(--azul-escuro);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 1em 0;
+}
+
+.principal {
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+}
+
+.principal__primeiro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.principal__primeiro__span {
+    color: var(--vinho-botao);
+    font-size: 14px;
+    font-weight: 500;
+    background: var(--rosa-fundo-botao);
+    padding: 0.5em 1em;
+    border-radius: 16px;
+}
+
+.principal__primeiro__titulo {
+    color: var(--azul-escuro);
+    font-size: 36px;
+    font-weight: 600;
+    padding: 0.5em 0;
+}
+
+.principal__primeiro__texto {
+    font-size: 20px;
+    padding-bottom: 3em;
+}
+
+.principal__primeiro__img {
+    width: 82vw;
+    margin-bottom: 3em;
+}
+
+.vaga__area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.oportunidade {
+    display: flex;
+    justify-content: flex-start;    
+}
+
+.area__titulo {
+    color: var(--azul-escuro);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0.8em;
+}
+
+.borda {
+    border: 1px solid var(--cor-borda);
+    border-radius: 16px;
+    padding: 2em 40em 2em 1em;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;  
+    gap: 24px;  
+}
+
+.nome__oportunidade {
+    color: var(--azul-escuro);
+    font-size: 18px;
+    font-weight: 500;    
+    margin-bottom: 1em;
+}
+
+.disponibilidade, .salario {
+    font-weight: 500;
+}
+
+.disponibilidade {
+    margin-right: 1em;
+}
+
+
+.final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20em 0 20em;
+    text-align: center;
+    background: var(--rosa-fundo-botao);
+    padding: 5em 5em;
+    margin: 0 10em 0 10em;
+    border-radius: 16px;
+}
+
+.final__span {
+    color: var(--vinho-botao);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.final__titulo {
+    color: var(--azul-escuro);
+    font-size: 36px;
+    font-weight: 500;
+    padding: 0.5em 0 1em 0;
+}
+
+.final__nome {
+    color: var(--azul-escuro);
+    font-weight: 500;
+    padding: 1em 0;
+}
+
+.final__emprego {
+    font-size: 14px;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cinza-rodape);    
+    margin-top: 5em;
+    padding: 5em 0;    
+}
+
+.rodape__titulo {
+    color: var(--azul-escuro);
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.rodape__texto {
+    font-size: 20px;
+    padding: 1em 0;
+}
+
+.formulario-email {
+    display: flex;
+    padding: 1em 0 2em 0;
+}
+
+.email {
+    width: 18vw;
+    margin-right: 1em;
+    border-radius: 8px;
+    padding-left: 1em;
+}
+
+.email::placeholder {    
+    font-family: var(--fonte);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cinza-fonte);
+}
+
+.email__cadastrar {
+    background-color: var(--vinho-botao);
+    color: var(--branco);
+    padding: 1em 2em;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    transition: 200ms;
+}
+
+.email__cadastrar:hover {
+    background-color: var(--azul-escuro);
+    border-color: var(--azul-escuro);
+}
+
+.rodape__direitos {
+    color: var(--cinza-copyright);
+}
